@@ -13,21 +13,27 @@
     <div class="container">
       <h1>AI poem generator</h1>
       <main>
-        <form id="poem-generator-form">
-          <input
-            class="search"
-            type="text"
-            placeholder="Enter your desired poem topic"
-            autofocus
-            required
-            autocomplete="off"
-            id="search-box"
-          />
-          <input type="submit" class="submit" />
-        </form>
+        <div class="form-wrapper">
+          <form id="poem-generator-form">
+            <input
+              class="search"
+              type="text"
+              placeholder="Enter your desired poem topic"
+              autofocus
+              required
+              autocomplete="off"
+              id="search-box"
+            />
+            <input type="submit" class="submit" />
+            <br />
+            <div class="poem-examples">
+              Examples: Books, the weather, food, friendship...
+            </div>
+          </form>
+        </div>
         <div id="generating-text"></div>
 
-        <div class="poem" id="poem"></div>
+        <div class="poem hidden" id="poem"></div>
       </main>
     </div>
     <footer>
