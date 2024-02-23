@@ -7,31 +7,32 @@
     <title>AI Poem Generator 📝</title>
   </head>
   <body>
-    <h1>Poem generator</h1>
-    <h3>Generated using AI</h3>
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter your desired poem topic"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
+    <div class="container">
+      <h1>AI poem generator</h1>
+      <main>
+        <form>
+          <input
+            class="search"
+            type="text"
+            placeholder="Enter your desired poem topic"
+            autofocus
+            required
+            autocomplete="off"
+          />
+          <input type="submit" class="submit" />
+        </form>
 
-      <div id="poem">
-        Poem line 1
-        <br />
-        Poem line 2
-        <br />
-        Poem line 3
-        <br />
-        Poem line 4
-      </div>
-    </main>
-    <script src="poem.js"></script>
+        <div class="poem" id="poem">
+          Poem line 1
+          <br />
+          Poem line 2
+          <br />
+          Poem line 3
+          <br />
+          Poem line 4
+        </div>
+      </main>
+    </div>
     <footer>
       This AI project was coded by 🙋🏼‍♀️
       <a href="https://github.com/laurenhrickard" target="_blank"
@@ -45,5 +46,6 @@
         >Netlify</a
       >.
     </footer>
+    <script src="poem.js"></script>
   </body>
 </html>
